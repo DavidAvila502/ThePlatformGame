@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cmyavpxtxm3hh"
+path="res://.godot/imported/Retro Impact Punch 07.wav-ff3672d440d783e5f322968b8266083b.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Retro Impact Punch 07.wav"
+dest_files=["res://.godot/imported/Retro Impact Punch 07.wav-ff3672d440d783e5f322968b8266083b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

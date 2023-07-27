@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bkgm780fu7fdq"
+path="res://.godot/imported/Retro Jump Simple A 01.wav-c5c2d893d6c2c3583fcd54ca57aecb81.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Retro Jump Simple A 01.wav"
+dest_files=["res://.godot/imported/Retro Jump Simple A 01.wav-c5c2d893d6c2c3583fcd54ca57aecb81.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
