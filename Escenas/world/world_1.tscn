@@ -1,14 +1,11 @@
-[gd_scene load_steps=10 format=3 uid="uid://c3o44pyqdkxtj"]
+[gd_scene load_steps=7 format=3 uid="uid://c3o44pyqdkxtj"]
 
-[ext_resource type="PackedScene" uid="uid://b4q5jts64pyj4" path="res://Escenas/player/player.tscn" id="1_keqm0"]
-[ext_resource type="Texture2D" uid="uid://8f3v2h2nbu0t" path="res://Assets/Pixel adventure/Terrain/Terrain (16x16).png" id="2_w4lso"]
-[ext_resource type="Texture2D" uid="uid://pjnrbnknpjea" path="res://Assets/Pixel adventure/Background/Yellow.png" id="3_1flwd"]
-[ext_resource type="PackedScene" uid="uid://7aadgsp5804m" path="res://Escenas/Enemy/enemy.tscn" id="4_0mq2l"]
-[ext_resource type="Script" path="res://Escenas/world/DagerZone.gd" id="5_dvtoy"]
-[ext_resource type="PackedScene" uid="uid://s8pxts8ljnry" path="res://Escenas/start/start.tscn" id="6_2pvdi"]
+[ext_resource type="Texture2D" uid="uid://8f3v2h2nbu0t" path="res://Assets/Pixel adventure/Terrain/Terrain (16x16).png" id="1_lthki"]
+[ext_resource type="Texture2D" uid="uid://pjnrbnknpjea" path="res://Assets/Pixel adventure/Background/Yellow.png" id="2_ytgyv"]
+[ext_resource type="Script" path="res://Escenas/world/DagerZone.gd" id="3_pbqlf"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_utjx8"]
-texture = ExtResource("2_w4lso")
+texture = ExtResource("1_lthki")
 6:0/0 = 0
 6:0/0/terrain_set = 0
 6:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
@@ -129,10 +126,7 @@ sources/0 = SubResource("TileSetAtlasSource_utjx8")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_map4t"]
 size = Vector2(1613, 20)
 
-[node name="world" type="Node"]
-
-[node name="player" parent="." instance=ExtResource("1_keqm0")]
-position = Vector2(-100, 131)
+[node name="world_1" type="Node"]
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_pfpx1")
@@ -148,21 +142,14 @@ motion_mirroring = Vector2(768, 0)
 [node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
 position = Vector2(-169, -517)
 scale = Vector2(12, 13)
-texture = ExtResource("3_1flwd")
+texture = ExtResource("2_ytgyv")
 centered = false
 
-[node name="enemy" parent="." instance=ExtResource("4_0mq2l")]
-position = Vector2(555, 99)
-
 [node name="DangerZone" type="Area2D" parent="."]
-script = ExtResource("5_dvtoy")
+script = ExtResource("3_pbqlf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DangerZone"]
 position = Vector2(233.5, 233)
 shape = SubResource("RectangleShape2D_map4t")
-
-[node name="Start" parent="." instance=ExtResource("6_2pvdi")]
-z_index = -1
-position = Vector2(-73, 130)
 
 [connection signal="body_entered" from="DangerZone" to="DangerZone" method="_on_body_entered"]

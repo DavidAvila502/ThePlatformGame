@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="The Platform Game"
-run/main_scene="res://Escenas/world/world.tscn"
+run/main_scene="res://Escenas/levels/level_1/level_1.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 
