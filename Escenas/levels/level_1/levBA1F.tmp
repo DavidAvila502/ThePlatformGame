@@ -10,7 +10,7 @@
 [node name="world_1" parent="." instance=ExtResource("1_agl6p")]
 
 [node name="player" parent="." instance=ExtResource("2_u8jdh")]
-position = Vector2(-57, 79)
+position = Vector2(-61, 165)
 
 [node name="enemy" parent="." instance=ExtResource("3_poen5")]
 position = Vector2(548, 106)
