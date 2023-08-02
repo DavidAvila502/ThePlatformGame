@@ -381,7 +381,7 @@ script = ExtResource("1_tkfhm")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(0, -1)
 sprite_frames = SubResource("SpriteFrames_pvypf")
-animation = &"run"
+animation = &"appear"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -391,8 +391,8 @@ shape = SubResource("CircleShape2D_1n5yn")
 limit_bottom = 648
 script = ExtResource("9_igyu5")
 
-[node name="audio_jump" type="AudioStreamPlayer2D" parent="."]
+[node name="jumpSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("9_f0ocp")
 
-[node name="appears" type="AudioStreamPlayer2D" parent="."]
+[node name="appearSound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("10_qqolm")

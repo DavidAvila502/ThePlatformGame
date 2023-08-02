@@ -10,6 +10,7 @@ var current_state
 
 func _init():
 	states= {
+		"appear": AppearState,
 		"idle": IdleState,
 		"run": RunState,
 		"jump": JumpState,

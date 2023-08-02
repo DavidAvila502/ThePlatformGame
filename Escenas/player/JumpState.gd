@@ -9,6 +9,7 @@ func _ready():
 func _physics_process(delta):
 	
 	if Player.is_on_floor():
+		Player.jumpSound.play()
 		Player.velocity.y -= jump
 		Player.animation.play("jump")
 	

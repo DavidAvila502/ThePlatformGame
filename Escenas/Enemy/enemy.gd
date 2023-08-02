@@ -47,7 +47,7 @@ func _physics_process(delta):
 
 func _on_atack_area_body_entered(body):
 	if body is Player:
-		body.takeDamage(20,direction)
+		body.takeDamage(20,direction,120)
 	
 func die():
 	animation.play('dying')

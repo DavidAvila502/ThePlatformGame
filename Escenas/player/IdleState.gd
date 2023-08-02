@@ -7,6 +7,7 @@ func _ready():
 	Player = get_parent().get_parent()
 	
 func _physics_process(delta):
+	Player.animation.flip_h =  direction < 0 if direction != 0 else Player.animation.flip_h
 	
 	Player.animation.play("idle")
 		
